@@ -4,59 +4,153 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Baha Dobay</title>
-  <meta name="description" content="Baha Dobay — projects, notes and writing.">
-  <style>
-    :root {
-      --bg: #fbfaf8;
-      --text: #1d1d1f;
-      --muted: #6b6b70;
-      --accent: #2f5bd3;
-      --rule: #e4e2dd;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #141416;
-        --text: #ececee;
-        --muted: #9a9aa2;
-        --accent: #8ba7ff;
-        --rule: #2a2a2e;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
-    main {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 18vh 1.25rem 4rem;
-    }
-    h1 {
-      font-size: 2rem;
-      letter-spacing: -0.02em;
-      margin: 0 0 0.25rem;
-    }
-    p { margin: 0 0 1.5rem; color: var(--muted); }
-    nav {
-      display: flex;
-      gap: 1.25rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--rule);
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta name="description" content="Baha Dobay — projects, writing and notes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply a saved theme before the page paints, so there is no flash.
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <main>
-    <h1>Baha Dobay</h1>
-    <p>Projects, notes and writing.</p>
-    <nav>
-      <a href="https://github.com/bahadobay">GitHub</a>
-    </nav>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/">
+        <svg class="wave-mark" viewBox="0 0 28 16" aria-hidden="true">
+          <path d="M1 8h3l2-5 3 10 3-12 3 14 3-10 2 6 2-3h5" />
+        </svg>
+        bahadobay
+      </a>
+      <nav class="nav">
+        <a href="#writing">Writing</a>
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Baha Dobay</h1>
+      <p class="lede">
+        [Two or three lines about you: what you study, what you build, what you are
+        curious about. Placeholder text for now.]
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#writing">Read the writing</a>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <div class="signal-line" aria-hidden="true">
+      <span>now → [one line about what you are working on right now]</span>
+    </div>
+
+    <section id="writing" class="section">
+      <h2>Writing</h2>
+      <ul class="posts">
+        <li>
+          <a class="post" href="#">
+            <span class="post-title">Post title goes here</span>
+            <span class="post-summary">One sentence that says what the post is about and why someone would read it.</span>
+            <span class="meta"><span class="tag">EN</span><span class="tag">TR</span><time>2026.09.26</time></span>
+          </a>
+        </li>
+        <li>
+          <a class="post" href="#">
+            <span class="post-title">A second post title</span>
+            <span class="post-summary">Another short summary. Real posts will come from markdown files later.</span>
+            <span class="meta"><span class="tag">EN</span><time>2026.09.20</time></span>
+          </a>
+        </li>
+        <li>
+          <a class="post" href="#">
+            <span class="post-title">A third, longer post title to see how wrapping looks on a phone</span>
+            <span class="post-summary">Placeholder summary.</span>
+            <span class="meta"><span class="tag">TR</span><time>2026.09.12</time></span>
+          </a>
+        </li>
+      </ul>
+      <a class="more" href="#">All posts →</a>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <a class="card" href="#">
+          <div class="cover" style="--seed: 1"><svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q10 5 20 30 T40 30 T60 30 Q70 50 80 30 T100 30 Q110 2 120 30 T140 30 T160 30 Q170 45 180 30 T200 30" /></svg></div>
+          <span class="card-title">Project one</span>
+          <span class="card-text">One line about what it does and who it is for.</span>
+          <span class="card-url">project-one.bahadobay.dev</span>
+        </a>
+        <a class="card" href="#">
+          <div class="cover" style="--seed: 2"><svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q15 55 30 30 T60 30 Q75 8 90 30 T120 30 Q135 50 150 30 T180 30 Q190 15 200 30" /></svg></div>
+          <span class="card-title">Project two</span>
+          <span class="card-text">Placeholder description, kept to one or two lines.</span>
+          <span class="card-url">project-two.bahadobay.dev</span>
+        </a>
+        <a class="card" href="#">
+          <div class="cover" style="--seed: 3"><svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 L20 30 L25 10 L30 50 L35 20 L40 40 L45 30 L90 30 L95 5 L100 55 L105 15 L110 45 L115 30 L200 30" /></svg></div>
+          <span class="card-title">Project three</span>
+          <span class="card-text">Placeholder description.</span>
+          <span class="card-url">project-three.bahadobay.dev</span>
+        </a>
+        <a class="card" href="#">
+          <div class="cover" style="--seed: 4"><svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q25 0 50 30 T100 30 T150 30 T200 30" /></svg></div>
+          <span class="card-title">Project four</span>
+          <span class="card-text">Placeholder description.</span>
+          <span class="card-url">github.com/bahadobay/project-four</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="notes" class="section">
+      <h2>Notes</h2>
+      <p class="section-intro">Short, unfinished notes. Things I learned, links, half-formed ideas.</p>
+      <ul class="notes">
+        <li><time>09.26</time><a href="#">A short note title</a></li>
+        <li><time>09.24</time><a href="#">Another note, a thing I learned today</a></li>
+        <li><time>09.21</time><a href="#">A link worth keeping, with one line on why</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="section-intro">[One line about what you are open to: projects, research, conversations.]</p>
+      <div class="links">
+        <a href="https://github.com/bahadobay">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="wrap footer">
+    <svg class="wave-mark" viewBox="0 0 28 16" aria-hidden="true">
+      <path d="M1 8h3l2-5 3 10 3-12 3 14 3-10 2 6 2-3h5" />
+    </svg>
+    <span>© 2026 Baha Dobay</span>
+  </footer>
+
+  <script>
+    document.querySelector(".theme-toggle").addEventListener("click", () => {
+      const root = document.documentElement;
+      const dark = root.dataset.theme
+        ? root.dataset.theme === "dark"
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+      root.dataset.theme = dark ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    });
+  </script>
 </body>
 </html>
