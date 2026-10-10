@@ -1,0 +1,34 @@
+# Baha Dobay
+
+> Data Scientist at Türk Telekom. Projects on causal inference, agentic
+> systems and speech models. This site collects the work, the writing and the
+> notes.
+
+## Projects
+
+- [Dodona](https://dodona.bahadobay.dev): a voice-native decision model. Ask
+  typed questions about speech — yes/no, multiple choice, ordinal scale — and
+  get calibrated probabilities read straight from the audio, with no transcript
+  in between. Open weights on
+  [Hugging Face](https://huggingface.co/bahadobay/dodona-audio), Apache-2.0
+  [code](https://github.com/bahadobay/dodona-audio) and an MCP server.
+- Crypto Insights Platform: a data pipeline combining on-chain data, LLM-based
+  sentiment analysis and anomaly detection, deployed with real-time dashboards.
+- NBA Player Career Prediction: a case study on the Oklahoma City Thunder
+  predicting career outcomes for veterans and rookies from a large NBA dataset.
+
+## Writing
+
+Longer posts, in English and Turkish. This section is being set up; the posts
+listed on the site are placeholders until the first one is published.
+
+## Notes
+
+Short, unfinished notes: things learned, links worth keeping, half-formed
+ideas.
+
+## Contact
+
+- GitHub: https://github.com/bahadobay
+- LinkedIn: https://www.linkedin.com/in/bahadobay3/
+- Email: dobaybaha3@gmail.com
