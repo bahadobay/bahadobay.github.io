@@ -7,11 +7,12 @@
 ## Projects
 
 - [Dodona](https://dodona.bahadobay.dev): a voice-native decision model. Ask
-  typed questions about speech — yes/no, multiple choice, ordinal scale — and
+  typed questions about speech (yes/no, multiple choice or a scale) and
   get calibrated probabilities read straight from the audio, with no transcript
   in between. Open weights on
   [Hugging Face](https://huggingface.co/bahadobay/dodona-audio), Apache-2.0
-  [code](https://github.com/bahadobay/dodona-audio) and an MCP server.
+  [code](https://github.com/bahadobay/dodona-audio), an MCP server and a
+  [demo](https://huggingface.co/spaces/bahadobay/dodona).
 - Crypto Insights Platform: a data pipeline combining on-chain data, LLM-based
   sentiment analysis and anomaly detection, deployed with real-time dashboards.
 - NBA Player Career Prediction: a case study on the Oklahoma City Thunder
