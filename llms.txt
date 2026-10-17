@@ -31,5 +31,6 @@ ideas.
 ## Contact
 
 - GitHub: https://github.com/bahadobay
+- Hugging Face: https://huggingface.co/bahadobay
 - LinkedIn: https://www.linkedin.com/in/bahadobay3/
 - Email: dobaybaha3@gmail.com

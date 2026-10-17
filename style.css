@@ -304,6 +304,12 @@ h1 {
 
 .card-text { color: var(--muted); font-size: 0.92rem; }
 
+.card-featured { grid-column: 1 / -1; }
+
+.card-featured .cover { aspect-ratio: 16 / 4; }
+
+.card-url a:hover { text-decoration: underline; }
+
 .card-url {
   margin-top: auto;
   padding-top: 0.4rem;
@@ -349,6 +355,8 @@ h1 {
 }
 
 .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+.link-icon.emoji { font-size: 0.95rem; line-height: 1; }
 
 .link-icon {
   display: block;
